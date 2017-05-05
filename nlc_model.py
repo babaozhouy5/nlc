@@ -24,16 +24,6 @@ import numpy as np
 from six.moves import xrange  # pylint: disable=redefined-builtin
 import tensorflow as tf
 from tensorflow.contrib.rnn.python.ops import core_rnn_cell_impl
-# from tensorflow.python.framework import ops
-# from tensorflow.python.framework import dtypes
-# from tensorflow.python.ops import array_ops
-# from tensorflow.python.ops import control_flow_ops
-# from tensorflow.python.ops import embedding_ops
-# from tensorflow.python.ops import rnn
-# from tensorflow.python.ops import rnn_cell
-# from tensorflow.python.ops import variable_scope as vs
-# from tensorflow.python.ops.math_ops import sigmoid
-# from tensorflow.python.ops.math_ops import tanh
 
 import nlc_data
 
