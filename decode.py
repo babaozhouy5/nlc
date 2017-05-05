@@ -179,7 +179,6 @@ def decode():
             output_sent = fix_sent(model, sess, sent)
             print("Candidate: ", output_sent)
 
-
 def main(_):
     decode()
 
