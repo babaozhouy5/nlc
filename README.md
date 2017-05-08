@@ -9,8 +9,7 @@ Implementation of Neural Language Correction (http://arxiv.org/abs/1603.09727) o
 To train character level model (default):
 
 
-    $ python train.py --data_dir /dir/to/train/and/valid/data (train.x.txt&train.y.txt / valid.x.txt&valid.y.txt)
-
+    $ python train.py --data_dir /dir/to/train/and/valid/data (train.x.txt&train.y.txt / valid.x.txt&valid.y.txt) --train_dir /dir/to/save/train_data
 
 To train word level model:
 
