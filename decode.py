@@ -147,9 +147,9 @@ def fix_sent(model, sess, sent):
     # De-tokenize
     beam_strs = detokenize(beam_toks, reverse_vocab)
     # Language Model ranking
-    # best_str = lm_rank(beam_strs, probs)
+    best_str = lm_rank(beam_strs, probs)
     # Return
-    return ' '.join(beam_strs) #best_str
+    return best_str
 
 
 def decode():
