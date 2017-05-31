@@ -68,9 +68,8 @@ def create_model(session, vocab_size, forward_only):
         FLAGS.learning_rate, FLAGS.learning_rate_decay_factor, FLAGS.dropout,
         forward_only=forward_only, optimizer=FLAGS.optimizer)
     ckpt = tf.train.get_checkpoint_state(FLAGS.train_dir)
-    if ckpt and tf.gfile.Exists(ckpt.model_checkpoint_path):
-        logging.info("Reading model parameters from %s" %
-                     ckpt.model_checkpoint_path)
+    if ckpt and tf.train.checkpoint_exists(ckpt.model_checkpoint_path):
+        print("Reading model parameters from %s" % ckpt.model_checkpoint_path)
         model.saver.restore(session, ckpt.model_checkpoint_path)
     else:
         logging.info("Created model with fresh parameters.")
